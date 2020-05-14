@@ -12,8 +12,9 @@ for c in range(1,8):
     else:
         menores += 1
     if ano >= data:
-        print('\033[31mValor Inválido.')
-        break
+        print('\033[31mValor Inválido.\033[m')
+        print('Ano de nascimento será igual ao seu ano atual menos um.')
+        ano = data - 1
 
 else:
     if maiores == 0:
